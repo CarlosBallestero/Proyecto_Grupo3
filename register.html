@@ -3,51 +3,40 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Registro</title>
+    <title>Grupo 3
+    </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style_register.css">
+    
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-      <div class="content">
-        <div class="container-xxl">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./resources/icon.png" alt="Logo" width="60" height="48" class="d-inline-block align-text-top">                        
-                  </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="sign_in.html" >Iniciar sesion</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="register.html">Registrarse</a>
-                  </li>
-                </ul>
+
+    <header>
+    </header>
+
+    <main>
+      <div id="contMain"></div>
+        <div class="container" id="contForm">
+          <h4 id = "tituloRegistro" >Registro</h4>
+          <form class="row g-2" id="registroForm">
+            <label for="correo" class="form-label">Dirección de Correo</label>
+            <input type="email" id="correo" class="form-control" required>
+            <label for="contrasena1" class="form-label">Contraseña</label>
+            <input type="password" id="contrasena1" class="form-control" aria-labelledby="passwordHelpBlock" required>
+            <label for="contrasena2" class="form-label">Confirmar contraseña</label>
+            <input type="password" id="contrasena2" class="form-control" aria-labelledby="passwordHelpBlock" required>
+            <a id="linkIS" href="sign_in.html">¿Ya posee una cuenta? Inicie Sesión</a>
+            <div id="contBoton">
+                <button type="submit" id="btn_register" class="btn btn-primary mb-3">Registrarse</button>
               </div>
-            </div>
-          </nav>
-          <div class="session_form">
-            <div class="email_space">
-                <label for="exampleFormControlInput1" class="form-label">Dirección de Correo</label>
-                <input type="email" id="email_input" class="form-control" placeholder="nombre@ejemplo.com">
-            </div>
-            <div class="password_space">
-                <label for="inputPassword5" class="form-label">Contraseña</label>
-                <input type="password" id="password_input" class="form-control" aria-labelledby="passwordHelpBlock">
-            </div>
-            <div class="password_confirm_space">
-              <label for="inputPassword5" class="form-label">Confirmar contraseña</label>
-              <input type="password" id="password_confirm_input" class="form-control" aria-labelledby="passwordHelpBlock">
-          </div>
-            <div class="col-auto">
-              <button type="submit" id="btn_register" class="btn btn-primary mb-3">Registrarse</button>
-            </div>
+          </form>
         </div>
-      </div>
-    </div>
+    </main>
+
+    <footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+      <script src="js/functions_register.js"></script>
+    </footer>
     </body>
 </html>
